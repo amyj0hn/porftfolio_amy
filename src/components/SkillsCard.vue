@@ -18,12 +18,30 @@ export default {
 </script>
 
 <style scoped>
-.flip-card {
-  background-color: transparent;
+/* .flip-card {
   width: 190px;
   height: 254px;
   perspective: 1000px;
   font-family: sans-serif;
+} */
+
+/* .flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+} */
+
+.flip-card {
+  width: 300px;
+  height: 200px;
+  border: none;
+  perspective: 1000px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d; 
 }
 
 .title {
@@ -61,15 +79,12 @@ export default {
 }
 
 .flip-card-front {
-  /* background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
-     rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%); */
+  background-color: #FFE0B5;
   border: 1px solid  #A27035;
 
 }
 
 .flip-card-back {
-  /* background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
-     bisque 40%, rgb(255, 185, 160) 78%); */
      background-color: #A27035;
      border: 1px solid  bisque;
 
@@ -77,5 +92,6 @@ export default {
   color: white;
   transform: rotateY(180deg);
 }
+
 
 </style>
