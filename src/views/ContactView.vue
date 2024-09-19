@@ -29,22 +29,22 @@
           <div class="contact-info slide-up">
             <div class="info-grid">
               <div class="info-item fade-in">
-                <i class="bi bi-geo-alt"></i>
+                <i class="bi bi-geo-alt-fill"></i>
                 <h5>Address</h5>
                 <p>Manenberg, Cape Town<br />Western Cape, 7764</p>
               </div>
               <div class="info-item fade-in">
-                <i class="bi bi-telephone"></i>
+                <i class="bi bi-telephone-fill"></i>
                 <h5>Phone</h5>
                 <p>0693527503</p>
               </div>
               <div class="info-item fade-in">
-                <i class="bi bi-envelope-at"></i>
+                <i class="bi bi-envelope-at-fill"></i>
                 <h5>Email</h5>
                 <p>amyj62450@gmail.com</p>
               </div>
               <div class="info-item fade-in">
-                <i class="bi bi-hand-thumbs-up"></i>
+                <i class="bi bi-hand-thumbs-up-fill"></i>
                 <h5>Socials</h5>
                 <div class="social-links">
                   <a href="https://www.linkedin.com/in/amy-johnson-5328b924a/" target="_blank">
@@ -206,7 +206,9 @@ export default {
 
 /* Social Links */
 .social-links a {
-  margin-right: 0.5rem;
+ 
+  margin: 10rem 0.5rem;
+
 }
 
 .row {
@@ -214,13 +216,18 @@ export default {
   justify-content: space-between;
 }
 
+.bi{
+  color: #533E2D;
+  font-size: 30px;
+}
+
 /* Media queries */
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .contact-content .row {
     flex-direction: column;
     align-items: center;
   }
-  .contact-form, .contact-info {
+  .contact-form .info-grid{
     width: 100%;
     margin-bottom: 20px;
   }

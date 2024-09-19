@@ -29,7 +29,7 @@
     <div class="col">
       <div id="details" data-aos="fade-right" data-aos-duration="3000">
         <h3 class="display-5">So, Who is Amy?</h3>
-        <p v-if="aboutMe?.length">
+        <p v-if="aboutMe?.length" class="desc">
           <span>{{ aboutMe[0]?.description }}</span>
         </p>
         <Spinner v-else />
@@ -94,6 +94,11 @@ onMounted(()=>{
     margin: 0;
     padding: 0;
     justify-content: center;
+  }
+
+  .desc{
+    font-size: 16px;
+    margin: 3rem;
   }
 </style>
 
